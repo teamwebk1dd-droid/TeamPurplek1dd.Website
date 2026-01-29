@@ -39,18 +39,18 @@
             max-width: 80%;
         }
 
-        .links-section {
-            padding: 100px 20px;
+        .section-container {
+            padding: 60px 20px;
             text-align: center;
             width: 100%;
-            max-width: 800px;
+            max-width: 900px;
         }
 
         .link-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         .link-item {
@@ -64,23 +64,22 @@
             transition: all 0.3s ease;
         }
 
-        /* Gold styling for the Gamepass button */
-        .gamepass-btn {
-            border-color: #ffd700; 
-            color: #ffd700;
-            box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
-        }
-
         .link-item:hover {
             background: #a29bfe;
             color: #2e026d;
-            transform: scale(1.05);
+            transform: translateY(-5px);
+        }
+
+        /* Gold styling for Gamepasses */
+        .gamepass-btn {
+            border-color: #ffd700; 
+            color: #ffd700;
         }
 
         .gamepass-btn:hover {
             background: #ffd700;
             color: #000;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
         }
 
         .btn {
@@ -94,6 +93,13 @@
             border-radius: 50px;
             transition: 0.3s;
         }
+
+        h2 {
+            margin-top: 40px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -101,20 +107,30 @@
     <section class="hero">
         <div class="glass-card">
             <h1>This is the official TeamPurplek1dd website</h1>
-            <p>Support the team and stay connected.</p>
-            <a href="#links" class="btn">View Links</a>
+            <p>The home of the team. Support us below!</p>
+            <a href="#store" class="btn">Go to Store</a>
         </div>
     </section>
 
-    <section id="links" class="links-section">
-        <h2>Our Official Links</h2>
+    <div id="store" class="section-container">
+        
+        <h2>🛒 Team Gamepasses</h2>
+        <div class="link-grid">
+            <a href="https://www.roblox.com/game-pass/1669052768" target="_blank" class="link-item gamepass-btn">Main Gamepass</a>
+            
+            <a href="https://www.roblox.com/game-pass/YOUR_SECOND_ID_HERE" target="_blank" class="link-item gamepass-btn">Second Gamepass</a>
+            
+            <a href="https://www.roblox.com/game-pass/YOUR_THIRD_ID_HERE" target="_blank" class="link-item gamepass-btn">Third Gamepass</a>
+        </div>
+
+        <h2>🔗 Social Links</h2>
         <div class="link-grid">
             <a href="https://youtube.com" target="_blank" class="link-item">YouTube</a>
-            <a href="https://discord.com" target="_blank" class="link-item">Discord Server</a>
-            <a href="https://www.roblox.com/game-pass/1669052768" target="_blank" class="link-item gamepass-btn">🛒 Buy Gamepass</a>
+            <a href="https://discord.com" target="_blank" class="link-item">Discord</a>
             <a href="https://instagram.com" target="_blank" class="link-item">Instagram</a>
         </div>
-    </section>
+
+    </div>
 
 </body>
 </html>
