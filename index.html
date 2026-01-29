@@ -53,6 +53,35 @@
             margin-top: 20px;
         }
 
+        /* Styling for the Member Cards */
+        .member-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .member-card:hover {
+            background: rgba(162, 155, 254, 0.2);
+            border-color: #a29bfe;
+            transform: translateY(-5px);
+        }
+
+        .member-name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #a29bfe;
+            display: block;
+        }
+
+        .member-role {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         .link-item {
             background: rgba(255, 255, 255, 0.05);
             padding: 20px;
@@ -67,7 +96,6 @@
         .link-item:hover {
             background: #a29bfe;
             color: #2e026d;
-            transform: translateY(-5px);
         }
 
         .gamepass-btn {
@@ -94,7 +122,7 @@
         }
 
         h2 {
-            margin-top: 40px;
+            margin-top: 50px;
             border-bottom: 2px solid rgba(255, 255, 255, 0.1);
             display: inline-block;
             padding-bottom: 10px;
@@ -106,23 +134,40 @@
     <section class="hero">
         <div class="glass-card">
             <h1>This is the official TeamPurplek1dd website</h1>
-            <a href="#store" class="btn">Go to Store</a>
+            <p>The home of the team. Support us below!</p>
+            <a href="#store" class="btn">Explore Team</a>
         </div>
     </section>
 
     <div id="store" class="section-container">
         
-        <h2>🛒 Team Gamepasses</h2>
+        <h2>👑 Team Members</h2>
+        <div class="link-grid">
+            <div class="member-card">
+                <span class="member-name">Member Name</span>
+                <span class="member-role">Founder / Leader</span>
+            </div>
+            <div class="member-card">
+                <span class="member-name">Member Name</span>
+                <span class="member-role">Administrator</span>
+            </div>
+            <div class="member-card">
+                <span class="member-name">Member Name</span>
+                <span class="AshtonVr/BaconK1dd">Developer</span>
+            </div>
+        </div>
+
+        <h2>🛒 Buy Scripts</h2>
         <div class="link-grid">
             <a href="https://www.roblox.com/game-pass/1669052768" target="_blank" class="link-item gamepass-btn">Basic Script</a>
-            
             <a href="https://www.roblox.com/game-pass/9448568089" target="_blank" class="link-item gamepass-btn">Premium Script</a>
         </div>
 
         <h2>🔗 Social Links</h2>
         <div class="link-grid">
             <a href="https://youtube.com" target="_blank" class="link-item">YouTube</a>
-            <a href="https://discord.com" target="_blank" class="link-item">Discord<\a>
+            <a href="https://discord.com" target="_blank" class="link-item">Discord</a>
+           
         </div>
 
     </div>
