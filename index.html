@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeamPurplek1dd Official</title>
     <style>
-        /* Smooth scrolling effect */
         html {
             scroll-behavior: smooth;
         }
@@ -19,9 +18,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
         }
 
-        /* Hero Section (The top part) */
         .hero {
             height: 100vh;
             display: flex;
@@ -37,10 +36,9 @@
             border-radius: 20px;
             text-align: center;
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            max-width: 600px;
+            max-width: 80%;
         }
 
-        /* Links Section (The part you scroll to) */
         .links-section {
             padding: 100px 20px;
             text-align: center;
@@ -66,10 +64,23 @@
             transition: all 0.3s ease;
         }
 
+        /* Gold styling for the Gamepass button */
+        .gamepass-btn {
+            border-color: #ffd700; 
+            color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+        }
+
         .link-item:hover {
             background: #a29bfe;
             color: #2e026d;
             transform: scale(1.05);
+        }
+
+        .gamepass-btn:hover {
+            background: #ffd700;
+            color: #000;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
         }
 
         .btn {
@@ -83,10 +94,6 @@
             border-radius: 50px;
             transition: 0.3s;
         }
-
-        .btn:hover {
-            background: #ffffff;
-        }
     </style>
 </head>
 <body>
@@ -94,7 +101,7 @@
     <section class="hero">
         <div class="glass-card">
             <h1>This is the official TeamPurplek1dd website</h1>
-            <p>Welcome to our hub. Check out our links and social media below.</p>
+            <p>Support the team and stay connected.</p>
             <a href="#links" class="btn">View Links</a>
         </div>
     </section>
@@ -104,7 +111,7 @@
         <div class="link-grid">
             <a href="https://youtube.com" target="_blank" class="link-item">YouTube</a>
             <a href="https://discord.com" target="_blank" class="link-item">Discord Server</a>
-            <a href="https://roblox.com" target="_blank" class="link-item">Roblox Group</a>
+            <a href="https://www.roblox.com/game-pass/1669052768" target="_blank" class="link-item gamepass-btn">🛒 Buy Gamepass</a>
             <a href="https://instagram.com" target="_blank" class="link-item">Instagram</a>
         </div>
     </section>
